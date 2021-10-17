@@ -1,3 +1,10 @@
+/* AREA CABECERA */
 .bg-sky{
     background-color: #5CA2E2;
+}
+
+@media (min-width: 992px) {
+    .mper{
+        margin-left: 25%;
+    }
 }
