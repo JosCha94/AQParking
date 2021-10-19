@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-sky">
         <div class="container-fluid">
@@ -22,8 +21,11 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <form class="d-flex my-2 my-lg-0 ms-auto">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit"> <i data-feather="search"></i></button>
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                            aria-describedby="barrabuscar2">
+                        <button class="btn btn-primary" type="submit" id="barrabucar2"><i data-feather="search"></i></button>
+                    </div>
                 </form>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mb-2 mb-lg-0">
@@ -38,47 +40,52 @@
     </nav>
 
     <div class="container">
-        <h1>José</h1>
-        <h1>Flor NO/NR</h1>
-        <h1>Fabricio probando git y github</h1>
+        <div class="row">
+            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <h2>Encuentra estacionamiento en segundos </h2>
+                    <p>Ahorra tiempo y dinero</p>
+                    <form class="d-flex my-2 my-lg-0 ms-auto">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                aria-describedby="barrabuscar2">
+                            <button class="btn btn-primary" type="submit" id="barrabucar2">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="img/City_driver.png" alt="imagen de carro">
+            </div>
+        </div>
     </div>
 
-    <footer class="bg-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-4 col-sm-6">
-                    <img src="img/logo.png" alt="">
-                    <a href=""><img src="feather-icons/dist/icons/facebook.svg" id="icon" alt=""></a>
-                    <a href=""><img src="feather-icons/dist/icons/instagram.svg" id= "icon" alt=""></a>
-                    <a href=""><img src="feather-icons/dist/icons/.svg" alt=""></a>   
-                </div>
-                <div class="col col-lg-4 col-sm-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, saepe!</p>   
-                </div>
-                <div class="col col-lg-4 col-sm-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, saepe!</p>   
+    <footer class="bg-plomo">
+        <div class="row mt-5 text-light ">
+            <div class="col-6 col-sm-3 mt-4">
+                <h2 class="text-center text-dark">AQParking</h2>
+                <div class="px-5 d-flex justify-content-center text-center">
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank"><i
+                            data-feather="instagram"></i></i></a>
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank"><i
+                            data-feather="twitter"></i></i></a>
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank"><i
+                            data-feather="facebook"></i></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="tyc col-6">
-                    <a href="">Terminos y condiciones</a>
-                </div>
-                <div class="pyp col-6">
-                    <a href="">Política de privacidad</a>
-                </div>
+            <div class="col-6 col-sm-3 text-center mt-4">
+                <a class="text-light px-4 linkfoot text-dark" href="#" target="_blank">Acerca de</a>
             </div>
-            <div class="row">
-                <div class="us col">
-                    <p>@2021 AQParking.com by Nosotros SAC</p>
-                </div>
+            <div class="col-6 col-sm-3 text-center mt-4">
+                <a class="text-light px-4 linkfoot text-dark" href="#" target="_blank">Términos y condiciones</a>
             </div>
-            
-        </div>
-        <!-- <div class="row mt-5 text-light">
-            <div class="col-sm-12">
+            <div class="col-6 col-sm-3 text-center mt-4">
+                <a class="text-light px-4 linkfoot text-dark" href="#" target="_blank">Política de privacidad</a>
+            </div>
+            <div class="col-sm-12 linkfoot text-dark mt-4">
                 <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
             </div>
-        </div> -->
+        </div>
     </footer>
 </body>
 <script src="feather-icons/dist/feather.min.js"></script>
