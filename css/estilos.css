@@ -63,3 +63,13 @@ footer .container .row .us{
     text-align: center;
     border: none;
 }
+
+/* BODY DE PAG.REGISTRO */
+.bodyreg{
+    background-image: url(../img/parking-fondo.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+    height: 100%;
+}
