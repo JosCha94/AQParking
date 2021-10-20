@@ -15,9 +15,9 @@
     <title>AQParking</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-sky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-sky">
         <div class="container-fluid">
-            <h1 class="text-white ms-lg-1">AQParking</h1>
+            <a href="index.html" class="text-decoration-none" title="Link to INDEX"><h1 class="text-white ms-lg-1">AQParking</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,10 +33,11 @@
                 </form>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mb-2 mb-lg-0">
-                        <button type="button" class="btn btn-secondary mx-3">Registrarse</button>
+                        <form action="registro.html">
+                        <button type="submit" class="btn btn-secondary mx-3" id="btn_registro" name="btn_registro">Registrarse</button></form>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary mx-2">Iniciar Sesión</button>
+                        <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Iniciar Sesión</button>
                     </li>
                 </ul>
             </div>
@@ -59,7 +60,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="img/City_driver.png" alt="imagen de carro">
+                <img class="img-fluid" src="img/City_driver.gif" alt="imagen de carro">
             </div>
         </div>
     </div>
@@ -70,11 +71,11 @@
             <div class="row">
                 <div class="col col-lg-4 col-sm-6">
                     <img src="img/logo.png" alt="logo AQPparking">
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram"><i
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram" title="Link to Instsgram"><i
                             data-feather="instagram"></i></i></a>
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter"><i
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter" title="Link to Twitter"><i
                             data-feather="twitter"></i></i></a>
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook"><i
+                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook" title="Link to Facebook"><i
                             data-feather="facebook"></i></a> 
                 </div>
                 <div class="col col-lg-4 col-sm-6">
@@ -86,10 +87,10 @@
             </div>
             <div class="row">
                 <div class="tyc col-6">
-                    <a href="">Terminos y condiciones</a>
+                    <a href="#" title="Link Terminos y condiciones">Terminos y condiciones</a>
                 </div>
                 <div class="pyp col-6">
-                    <a href="">Política de privacidad</a>
+                    <a href="#" title="Link Política de privacidad">Política de privacidad</a>
                 </div>
             </div>
             <div class="row">
