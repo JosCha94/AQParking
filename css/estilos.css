@@ -8,11 +8,20 @@
 
 .linkfoot{ text-decoration: none; font-weight:500;}
 
+body{
+    display: flex;
+    flex-direction:column;
+    height: 100%; 
+}
 /*FOOTER*/
 footer {
+    margin-top: auto;
     color: white;
     font-size: 14px;
-    background-color: #5CA2E2;
+    background-color: #5CA2E2;    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 footer a{
     text-decoration: none;
@@ -28,22 +37,23 @@ footer img{
     margin-left: auto;
     margin-right: auto;
 }
-footer .container .row{
+footer .container-fluid .row{
     margin-top: 5px;
     padding: 5px;
     align-items: center;
     text-align: center;
 }
 
-footer .container .row .col{
+footer .container-fluid .row .col{
     margin: 5px 0px;
     padding: 5px;
-    border-right:#F1F1F2 1px solid ;
+    /* border-right:#F1F1F2 1px solid ; */
 }
-footer .container .row.end{
+footer .container-fluid .row.end{
     margin-top: 30px;
     
 }
+
 
 /* BODY DE PAG.REGISTRO */
 .bodyreg{
