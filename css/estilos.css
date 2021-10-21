@@ -11,55 +11,38 @@
 /*FOOTER*/
 footer {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
+    background-color: #5CA2E2;
 }
 footer a{
     text-decoration: none;
     color: white;
 }
+footer a:hover{
+    color: #C4C4C4;
+    font-size: 105%;
+}
 footer img{
-    width: 50%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-footer #icon{
-    display: inline-block;
-    width: 10%;
-    padding: 3px;
-    margin-top: 15px;
-    
-}
 footer .container .row{
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 5px;
+    padding: 5px;
     align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
 footer .container .row .col{
-    margin: 20px 0px;
-    padding: 20px;
+    margin: 5px 0px;
+    padding: 5px;
     border-right:#F1F1F2 1px solid ;
 }
-footer .container .row .tyc{
-    margin: 0px;
-    padding: 20px;
-    text-align: end;
-    border-right:#F1F1F2 1px solid ;
-
-}
-footer .container .row .pyp{
-    margin: 0px;
-    padding: 20px;
-    text-align: start;
-}
-footer .container .row .us{
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    border: none;
+footer .container .row.end{
+    margin-top: 30px;
+    
 }
 
 /* BODY DE PAG.REGISTRO */
