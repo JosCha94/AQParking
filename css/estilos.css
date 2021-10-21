@@ -19,6 +19,7 @@ footer {
     color: white;
     font-size: 14px;
     background-color: #5CA2E2;    
+    position: relative;   
     bottom: 0;
     width: 100%;
 }
