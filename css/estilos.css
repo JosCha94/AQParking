@@ -69,3 +69,14 @@ footer .container-fluid .row.end{
     background-image: url(../img/City_driver.png);
     background-position: center center;
 }
+
+/*BODY DEL REGISTRO*/
+
+label, ::-webkit-input-placeholder {
+    font-size: small;
+}
+
+/* select option{
+    font-size: small;
+} */
+
