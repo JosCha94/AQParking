@@ -61,7 +61,7 @@
           <img src="img/logo.png" width="48" alt="logo">
         </div>
         <h2 class="fw-bold text-center py-5">Iniciar Sesión</h2>
-        <form action="#">
+        <form form name="formulariologin" id="formulariologin" action="principal.html">
           <div class="mb-4">
             <label for="iptmail" class="form-label">Correo Electronico</label>
             <input type="email" class="form-control" id="iptmaillogin" name="iptmaillogin" placeholder="name@example.com" required>
@@ -132,17 +132,4 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/script.js"></script>
-<script src="js/jquery.motio.js"></script>
-<script>
-  var element = document.querySelector('.bodyreg');
-  var panning = new Motio(element, {
-    fps: 30,
-    speedX: -100,
-    // speedY: -10,
-    bgWidth: 1024,
-    bgHeight: 1024,
-  });
-  panning.play();
-</script>
-
 </html>
