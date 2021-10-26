@@ -83,3 +83,7 @@ label, ::-webkit-input-placeholder {
     padding: 40px;
 }
 
+/* BODY CARDS */
+.bg-graycard{
+    background-color: #FCFCFC;
+}
