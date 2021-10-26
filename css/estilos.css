@@ -8,11 +8,11 @@
 
 .linkfoot{ text-decoration: none; font-weight:500;}
 
-/*body{
+/* body{
     display: flex;
     flex-direction:column;
     height: 100%; 
-}*/
+} */
 /*FOOTER*/
 footer {
     margin-top: auto;
@@ -76,7 +76,10 @@ label, ::-webkit-input-placeholder {
     font-size: small;
 }
 
-/* select option{
-    font-size: small;
-} */
+/* REGISTRO DE ESTACIONAMIENTOS*/
+.dobleForm{
+    border: solid 3px #C4C4C4;    
+    border-radius: 10px;
+    padding: 40px;
+}
 
