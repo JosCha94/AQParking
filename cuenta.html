@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="estacionamientos en Arequipa, Parqueos en Arequipa, Arequipa parking, playas de estacionamiento, reserva de estacionamiento">
+    <meta name="description"
+        content="Encuentra tu estacionamiento en la ciudad de Arequipa y reserva tu sitio facilmente">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>AQParking - Cuenta Usuario</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-sky">
+        <div class="container-fluid">
+            <a href="index.html" class="text-decoration-none" title="Link to INDEX">
+                <h1 class="text-white ms-lg-1">AQParking</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <form class="d-flex my-2 my-lg-0 ms-auto">
+                    <div class="input-group mb-3 my-sm-3">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                            aria-describedby="barrabuscarheader">
+                        <button class="btn btn-primary" type="submit" id="barrabuscarheader"><i
+                                data-feather="search"></i></button>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mb-2 mb-lg-0 d-none">
+                        <form action="registro.html">
+                            <button type="submit" class="btn btn-secondary mx-3" id="btn_registro"
+                                name="btn_registro">Registrarse</button>
+                        </form>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a href="login.html">
+                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Iniciar
+                                Sesión</button>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none">
+                        <a href=" #">
+                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Mi
+                                cuenta</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- BODY -->
+
+    <div class="container-fluid my-4 ">
+        <h2 class="text-center my-3">Mi Cuenta</h2>
+        <div class="row align-items-stretch">
+            <div class="col-sm-6">
+                <div name="datos_login" class="text-center border border-1 p-2 mb-2">
+                    <h3>Datos del login</h3>
+                    <p><strong>Correo: </strong><span id="usrlogmail" name="usrlogmail">correo@gmail.com</span></p>
+                    <p><strong>Contraseña: </strong><input type="text" value="1235lp" id="usrlogpass" name="usrlogpass"
+                            readonly></p>
+                    <button type="button" class="btn btn-primary" id="btn-changepass" name="btn-changepass">Cambiar
+                        contraseña</button>
+                    <div id="btnsupdatepass" class="my-3" style="display: none;">
+                        <button type="button" class="btn btn-primary" id="btn-savepass"
+                            name="btn-savepass">Guardar</button>
+                        <button type="button" class="btn btn-danger" id="btn-cancelpass"
+                            name="btn-cancelpass">Cancelar</button>
+                    </div>
+                </div>
+                <div name="datos_usuario" class="text-center border border-1 p-2">
+                    <h3>Datos del usuario</h3>
+                    <p><strong>Nombre: </strong><input id="usrname" name="usrname" type="text" value="nombre apellido" readonly>
+                    </p>
+                    <p><strong>Correo de destino: </strong><input id="usrcorreo" name="usrcorreo" type="email"
+                            value="correo-destino@gmail.com" readonly></p>
+                    <p><strong>Celular: </strong><input id="usrcel" name="usrcel" type="tel" value="123456789" readonly>
+                    </p>
+                    <button type="button" class="btn btn-primary" id="btn-changedata" name="btn-changedata">Editar
+                        datos</button>
+                    <div id="btnsupdatedata" class="my-3" style="display: none;">
+                        <button type="button" class="btn btn-primary" id="btn-savedata"
+                            name="btn-savedata">Guardar</button>
+                        <button type="button" class="btn btn-danger" id="btn-canceldata"
+                            name="btn-canceldata">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h2 class="text-center my-2">Historial de reservas</h2>
+                <div class="d-flex justify-content-center mx-sm-4">
+                    <select class="form-select" aria-label="reservas realizadas">
+                        <option selected>Mis reservas</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="col col-lg-12">
+                        <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking">
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram"
+                            title="Link to Instsgram"><i data-feather="instagram"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter"
+                            title="Link to Twitter"><i data-feather="twitter"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook"
+                            title="Link to Facebook"><i data-feather="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <div class="row tyc">
+                        <div class=" col-lg-4">
+                            <a href="#" title="Link Terminos y condiciones">Terminos y condiciones</a>
+                        </div>
+                        <div class=" col-lg-4">
+                            <a href="#" title="Link Política de privacidad">Política de privacidad</a>
+                        </div>
+                        <div class=" col-lg-4">
+                            <a href="#" title="Política de Cookies">Política de Cookies</a>
+                        </div>
+                        <div class="row end">
+                            <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+<!-- <script src="https://kit.fontawesome.com/f52de5d372.js" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/script.js"></script>
+
+</html>
