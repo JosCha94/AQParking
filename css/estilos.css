@@ -70,10 +70,13 @@ footer .container-fluid .row.end{
     background-position: center center;
 }
 
-/*BODY DEL REGISTRO*/
+/*BODY DEL REGISTRO USUARIO*/
 
 label, ::-webkit-input-placeholder {
     font-size: small;
+}
+.imgRegistro{
+    margin-top: 180px;
 }
 
 /* REGISTRO DE ESTACIONAMIENTOS*/
@@ -82,6 +85,17 @@ label, ::-webkit-input-placeholder {
     border-radius: 10px;
     padding: 40px;
 }
+.button-reg{
+    /* padding: 10px 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-reg{
+    padding: 10px 80px;
+
+}
+ 
 
 /* BODY CARDS */
 .bg-graycard{
