@@ -101,3 +101,9 @@ label, ::-webkit-input-placeholder {
 .bg-graycard{
     background-color: #FCFCFC;
 }
+
+/*BODY RESERVA DE ESTACIONAMIENTO */
+.form-wrapper {
+  max-width: 470px;
+  margin: -10px auto 0;
+}
