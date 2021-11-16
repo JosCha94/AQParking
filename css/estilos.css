@@ -17,7 +17,7 @@
 footer {
     margin-top: auto;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     background-color: #5CA2E2;    
     position: relative;   
     bottom: 0;
@@ -71,9 +71,15 @@ footer .container-fluid .row.end{
 }
 
 /*BODY DEL REGISTRO USUARIO*/
+.usr-form{
+    border: solid 2px #C4C4C4;
+    border-radius: 10px;
+    padding:30px;
+    
+}
 
 label, ::-webkit-input-placeholder {
-    font-size: small;
+    font-size: med;
 }
 .imgRegistro{
     margin-top: 180px;
@@ -81,9 +87,9 @@ label, ::-webkit-input-placeholder {
 
 /* REGISTRO DE ESTACIONAMIENTOS*/
 .dobleForm{
-    border: solid 3px #C4C4C4;    
+    border: solid 2px #C4C4C4;    
     border-radius: 10px;
-    padding: 40px;
+    padding:30px;
 }
 .button-reg{
     /* padding: 10px 80px; */

@@ -9,8 +9,8 @@
         content="estacionamientos en Arequipa, Parqueos en Arequipa, Arequipa parking, playas de estacionamiento, reserva de estacionamiento">
     <meta name="description"
         content="Encuentra tu estacionamiento en la ciudad de Arequipa y reserva tu sitio facilmente">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>AQParking - Nuevo Registro de usuario u estacionamiento</title>
 </head>
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-sky">
         <div class="container-fluid">
             <a href="index.html" class="text-decoration-none" title="Link to INDEX">
-                <h1 class="text-white ms-lg-1">AQParking</h1>
+                <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking" class="img-fluid ms-2" style="width: 7em;"></a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -58,7 +58,7 @@
         <div class="row align-items-stretch">
             <div class="col-lg-6 col-md-12">
                 <h2 class="fw-bold text-center py-5">Registrate</h2>
-                <form class="form-control">
+                <form class="usr-form" id="usr-form">
                     <div class="mb-4">
                         <label for="nameRegistro" class="form-label">Nombres</label>
                         <input type="text" class="form-control" id="nameRegistro" name="nameRegistro"
@@ -76,8 +76,11 @@
                     </div>
                     <div class="mb-4">
                         <label for="registroPass" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="registroPass" name="registroPass"
-                            placeholder="Contraseña" required>
+                        <input type="password" class="form-control" id="registroPass" name="registroPass" placeholder="Contraseña" >
+                    </div>
+                    <div class="mb-4">
+                        <label for="registroPass2" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="registroPass2" name="registroPass2" placeholder="Vuelva a escribir la contraseña">
                     </div>
                     <div class="mb-4">
                         <label for="tipoDocumento" class="form-label">Tipo de documento</label>
@@ -175,4 +178,29 @@
     panning.play();
 </script>
 
+<!-- VALIDACION DE CONTRASEÑA JAVASCRIPT
+<script>
+    $('#registroPass').keyup(function(){
+    let _this = $('#registroPass');
+    let pass_1 = $('#registroPass').val();
+            _this.attr('style', 'background:white');
+    if(pass_1.charAt(0) == ' '){
+        _this.attr('style', 'background:#FF4A4A');
+    }
+
+    if(_this.val() == ''){
+        _this.attr('style', 'background:#FF4A4A');
+    }
+});
+
+$('#pass_2').keyup(function(){
+    let pass_1 = $('#registroPass').val();
+    let pass_2 = $('registroPass2').val();
+    let _this = $('#registroPass2');
+            _this.attr('style', 'background:white');
+    if(pass_1 != pass_2 && pass_2 != ''){
+        _this.attr('style', 'background:#FF4A4A');
+    }
+});
+</script> -->
 </html>
