@@ -69,14 +69,9 @@
                     <h3>Datos del login</h3>
                     <p><strong>Correo: </strong><span id="usrlogmail" name="usrlogmail">correo@gmail.com</span></p>
                     <p><strong>Contraseña: </strong><span id="usrlogpass" name="usrlogpass">xxxxx</span></p>
-                    <button type="button" class="btn btn-primary" id="btn-changepass" name="btn-changepass">Cambiar
+                    <button type="button" class="btn btn-primary" id="btn-changepass" name="btn-changepass"
+                        data-bs-toggle="modal" data-bs-target="#modalpassusr">Cambiar
                         contraseña</button>
-                    //<div id="btnsupdatepass" class="my-3" style="display: none;">
-                    //    <button type="button" class="btn btn-primary" id="btn-savepass"
-                    //        name="btn-savepass">Guardar</button>
-                    //    <button type="button" class="btn btn-danger" id="btn-cancelpass"
-                    //        name="btn-cancelpass">Cancelar</button>
-                    //</div>
                 </div>
                 <div class="modal fade" id="modalpassusr" tabindex="-1" aria-labelledby="modalcontraseña"
                     aria-hidden="true">
@@ -108,20 +103,21 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div name="datos_usuario" class="text-center border border-1 p-2">
                     <h3>Datos del usuario</h3>
                     <img src="img/usuario.png" alt="user" class="img-fluid rounded-circle mx-auto my-3" width="100">
+
                     <p><strong>Usuario: </strong><span id="usrname" name="usrname">nombre apellido</span></p>
-                    <p><strong>Correo de destino: </strong><span id="usrcorreo" name="usrcorreo">correo-destino@gmail.com</span></p>
-                    p><strong>Celular: </strong><span id="usrcel" name="usrcel">123456789</span></p>
-                    <button type="button" class="btn btn-primary" id="btn-changedata" name="btn-changedata">Editar
+
+                    <p><strong>Correo de destino: </strong><span id="usrcorreo"                    name="usrcorreo">correo-destino@gmail.com</span></p>
+
+                    <p><strong>Celular: </strong><span id="usrcel" name="usrcel">123456789</span></p>
+
+                    <button type="button" class="btn btn-primary" id="btn-changedata" name="btn-changedata"
+                        data-bs-toggle="modal" data-bs-target="#modaldatausr">Editar
                         datos</button>
-                    //<div id="btnsupdatedata" class="my-3" style="display: none;">
-                    //    <button type="button" class="btn btn-primary" id="btn-savedata"
-                    //        name="btn-savedata">Guardar</button>
-                    //    <button type="button" class="btn btn-danger" id="btn-canceldata"
-                    //        name="btn-canceldata">Cancelar</button>
-                    //</div>
                 </div>
                 <div class="modal left fade" id="modaldatausr" tabindex="-1" aria-labelledby="modaldata"
                     aria-hidden="true">
@@ -222,6 +218,7 @@
                   </div>
             </div>
         </div>
+
     </div>
     <!-- FOOTER -->
     <footer class="footer">
@@ -241,10 +238,12 @@
                 <div class="col-lg-9 col-md-12">
                     <div class="row tyc">
                         <div class=" col-lg-4">
-                            <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y condiciones</a>
+                            <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y
+                                condiciones</a>
                         </div>
                         <div class=" col-lg-4">
-                            <a href="politica-privacidad.html" title="Link Política de privacidad">Política de privacidad</a>
+                            <a href="politica-privacidad.html" title="Link Política de privacidad">Política de
+                                privacidad</a>
                         </div>
                         <div class=" col-lg-4">
                             <a href="politica-cookies.html" title="Política de Cookies">Política de Cookies</a>
