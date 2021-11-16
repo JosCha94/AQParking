@@ -107,3 +107,13 @@ label, ::-webkit-input-placeholder {
   max-width: 470px;
   margin: -10px auto 0;
 }
+
+/* PARA Q SE MUESTRE 100 DE EN PANTALLAS GRANDES Y NO SE DESACOMODE EN PANTALLAS PEQUEÑAS */
+.ph-100{
+    height: 100%;
+}
+@media (min-height: 768px) {
+  .ph-100 {
+    height: 100vh;
+  }
+}
