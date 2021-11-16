@@ -12,8 +12,9 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>AQParking - Reserva de  estacionamiento</title>
+    <title>AQParking - Reserva de estacionamiento</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg navbar-light bg-sky">
@@ -31,7 +32,8 @@
                     <div class="input-group mb-3 my-sm-3">
                         <input class="form-control" type="search" placeholder="Buscar" aria-label="Search"
                             aria-describedby="barrabuscarheader">
-                        <button class="btn btn-primary" type="submit" id="barrabuscarheader"><i data-feather="search"></i></button>
+                        <button class="btn btn-primary" type="submit" id="barrabuscarheader"><i
+                                data-feather="search"></i></button>
                     </div>
                 </form>
                 <ul class="navbar-nav ms-auto">
@@ -47,11 +49,12 @@
                                 Sesión</button>
                         </a>
                     </li>
-                     <li class="nav-item ">
+                    <li class="nav-item ">
                         <a href="cuenta.html">
-                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Mi cuenta</button>
+                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Mi
+                                cuenta</button>
                         </a>
-					</li>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -61,89 +64,95 @@
     <h2 class="text-center mt-4 mb-3">RESERVA DE ESTACIONAMIENTO</h2>
 
     <div class="container ph-100 my-5">
-          <div class="form-wrapper" >
+        <div class="form-wrapper">
             <div class="row">
-                <form >
+                <form>
                     <div class="form">
-                         <div class="mb-4">
-                        <label for="vehiculoRegistrad-sio" class="form-label">Vehículos Registrados</label>
-                        <select class="form-select" aria-label="tipoDocumento" id="vehiculoRegistrado" required>   
-								 <option selected>Selecciona un vehículo</option>
+                        <div class="mb-4">
+                            <label for="vehiculoRegistrad-sio" class="form-label">Vehículos Registrados</label>
+                            <select class="form-select" aria-label="tipoDocumento" id="vehiculoRegistrado" required>
+                                <option selected>Selecciona un vehículo</option>
                                 <option value="1"> vehículo 01</option>
-                                <option value="2"> vehículo 02</option>   
-								<option value="3"> vehículo 03</option>   
-                        </select>
-                        </div>                     
+                                <option value="2"> vehículo 02</option>
+                                <option value="3"> vehículo 03</option>
+                            </select>
+                        </div>
                         <div class="mb-3">
                             <label for="marcaVehiculo" class="form-label">Marca</label>
-                            <input type="text" class="form-control" id="marcaVehiculo" name="marcaVehiculo" placeholder="Hyundai" required>
+                            <input type="text" class="form-control" id="marcaVehiculo" name="marcaVehiculo"
+                                placeholder="Hyundai" required>
                         </div>
                         <div class="mb-3">
                             <label for="modeloVehiculo" class="form-label">Modelo</label>
-                            <input type="text" class="form-control" id="modeloVehiculo" name="modeloVehiculo" placeholder="Tucson" required>
+                            <input type="text" class="form-control" id="modeloVehiculo" name="modeloVehiculo"
+                                placeholder="Tucson" required>
                         </div>
                         <div class="mb-3">
                             <label for="colorVehiculo" class="form-label">Color</label>
-                            <input type="text" class="form-control" id="colorVehiculo" name="colorVehiculo" placeholder="azul" required>
+                            <input type="text" class="form-control" id="colorVehiculo" name="colorVehiculo"
+                                placeholder="azul" required>
                         </div>
-						 <div class="mb-3">
+                        <div class="mb-3">
                             <label for="placaVehiculo" class="form-label">Placa vehicular</label>
-                            <input type="text" class="form-control" id="placaVehiculo" name="placaVehiculo" placeholder="AFG-717" required>
+                            <input type="text" class="form-control" id="placaVehiculo" name="placaVehiculo"
+                                placeholder="AFG-717" required>
                         </div>
-						 <div class="d-grid ">
-							<button type="submit" class="btn btn-primary">RESERVAR</button>
-						</div>
+                        <div class="d-grid ">
+                            <button type="submit" class="btn btn-primary">RESERVAR</button>
+                        </div>
                     </div>
-				     				
+
                 </form>
             </div>
-           
+
         </div>
-       
-        
+
+
     </div>
 
     <!--FOOTER-->
     <footer class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 col-md-12">
-                <div class="col col-lg-12">
-                    <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking">
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram" title="Link to Instsgram"><i
-                            data-feather="instagram"></i></i></a>
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter" title="Link to Twitter"><i
-                            data-feather="twitter"></i></i></a>
-                    <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook" title="Link to Facebook"><i
-                            data-feather="facebook"></i></a> 
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-12">
-                <div class="row tyc">
-                    <div class=" col-lg-4">
-                        <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y condiciones</a>
-                    </div>
-                    <div class=" col-lg-4">
-                        <a href="politica-privacidad.html" title="Link Política de privacidad">Política de privacidad</a>
-                    </div>
-                    <div class=" col-lg-4">
-                        <a href="politica-cookies.html" title="Política de Cookies">Política de Cookies</a>
-                    </div>
-                    <div class="row end">
-                        <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="col col-lg-12">
+                        <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking">
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram"
+                            title="Link to Instsgram"><i data-feather="instagram"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter"
+                            title="Link to Twitter"><i data-feather="twitter"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook"
+                            title="Link to Facebook"><i data-feather="facebook"></i></a>
                     </div>
                 </div>
-            </div>           
+                <div class="col-lg-9 col-md-12">
+                    <div class="row tyc">
+                        <div class=" col-lg-4">
+                            <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y
+                                condiciones</a>
+                        </div>
+                        <div class=" col-lg-4">
+                            <a href="politica-privacidad.html" title="Link Política de privacidad">Política de
+                                privacidad</a>
+                        </div>
+                        <div class=" col-lg-4">
+                            <a href="politica-cookies.html" title="Política de Cookies">Política de Cookies</a>
+                        </div>
+                        <div class="row end">
+                            <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
-    </div>
     </footer>
 
 </body>
 
 <script src="feather-icons/dist/feather.min.js"></script>
 <script>
-  feather.replace()
+    feather.replace()
 </script>
 <!-- <script src="https://kit.fontawesome.com/f52de5d372.js" crossorigin="anonymous"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
@@ -152,14 +161,15 @@
 <script src="js/script.js"></script>
 <script src="js/jquery.motio.js"></script>
 <script>
-  var element = document.querySelector('.bodyreg');
-  var panning = new Motio(element, {
-    fps: 30,
-    speedX: -100,
-    // speedY: -10,
-    bgWidth: 1024,
-    bgHeight: 1024,
-  });
-  panning.play();
+    var element = document.querySelector('.bodyreg');
+    var panning = new Motio(element, {
+        fps: 30,
+        speedX: -100,
+        // speedY: -10,
+        bgWidth: 1024,
+        bgHeight: 1024,
+    });
+    panning.play();
 </script>
+
 </html>

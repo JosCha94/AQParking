@@ -12,12 +12,13 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-	
+
     <title>AQParking - Estacionamiento</title>
 </head>
+
 <body>
-        <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-sky">
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-sky">
         <div class="container-fluid">
             <a href="index.html" class="text-decoration-none" title="Link to INDEX">
                 <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking" class="img-fluid ms-2" style="width: 7em;"></a>
@@ -32,11 +33,12 @@
                     <div class="input-group mb-3 my-sm-3">
                         <input class="form-control" type="search" placeholder="Buscar" aria-label="Search"
                             aria-describedby="barrabuscarheader">
-                        <button class="btn btn-primary" type="submit" id="barrabuscarheader"><i data-feather="search"></i></button>
+                        <button class="btn btn-primary" type="submit" id="barrabuscarheader"><i
+                                data-feather="search"></i></button>
                     </div>
                 </form>
                 <ul class="navbar-nav ms-auto">
-                 <li class="nav-item d-none">
+                    <li class="nav-item d-none">
                         <form action="registro.html">
                             <button type="submit" class="btn btn-secondary mx-3" id="btn_registro"
                                 name="btn_registro">Registrarse</button>
@@ -48,71 +50,74 @@
                                 Sesión</button>
                         </a>
                     </li>
-                     <li class="nav-item ">
+                    <li class="nav-item ">
                         <a href="cuenta.html">
-                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Mi cuenta</button>
+                            <button type="button" class="btn btn-primary mx-2" id="btn_sesion" name="btn_sesion">Mi
+                                cuenta</button>
                         </a>
-					</li>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-<!-- BODY -->		
-	<h2 class="text-center mt-4 mb-3">NOMBRE DE ESTACIONAMIENTO</h2>
-	    <div class="container ph-100 my-5">
-  <div class="row">
-    <div class="col-sm-4">
-      <img class="img-fluid" src="img/estacionamiento1.jpg" alt="estacionamiento" width="400" height="600">    
-      <hr class="d-sm-none">
+    <!-- BODY -->
+    <h2 class="text-center mt-4 mb-3">NOMBRE DE ESTACIONAMIENTO</h2>
+    <div class="container ph-100 my-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-fluid" src="img/estacionamiento1.jpg" alt="estacionamiento" width="400" height="600">
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <p>Dirección: <span> </span></p>
+                    <p>Horario de atención: <span>4:00 a.m. - 10:00 p.m.</span></p>
+                </div>
+                <button type="button" class="btn btn-primary">Mapa</button>
+                <div class="row mt-3">
+                    <p>Precio: <span>S/4.00</span></p>
+                    <p>Sitios disponibles: <span>7</span></p>
+                </div>
+                <a class="btn btn-primary" href="estacionamiento-reserva.html" role="button">RESERVAR</a>
+                <form action="#">
+                    <div class="mb-3 mt-3">
+                        <label for="rating">Calificación :</label>
+                        <input type="number" id="rating" name="rating" min="1" max="5">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="comment">COMENTARIOS:</label>
+                        <textarea class="form-control" rows="4" id="comment" name="text"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-pill">COMENTAR</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-8">
-       <div class="row">
-            <p>Dirección: <span> </span></p>
-            <p>Horario de atención: <span>4:00 a.m. - 10:00 p.m.</span></p>
-       </div>
-	   <button type="button" class="btn btn-primary">Mapa</button>
-		<div class="row mt-3">
-             <p>Precio: <span>S/4.00</span></p>
-            <p>Sitios disponibles: <span>7</span></p>
-       </div>
-	<a class="btn btn-primary" href="estacionamiento-reserva.html" role="button">RESERVAR</a>
-	  <form action="#">
-	  <div class="mb-3 mt-3">
-		<label for="rating">Calificación :</label>
-		<input type="number" id="rating" name="rating" min="1" max="5">
-		</div>
-		<div class="mb-3 mt-3">
-		  <label for="comment">COMENTARIOS:</label>	  
-		  <textarea class="form-control" rows="4" id="comment" name="text"></textarea>
-		</div>
-		<button type="submit" class="btn btn-primary rounded-pill">COMENTAR</button>
-	  </form>
-   </div>
-  </div>
-</div>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="col col-lg-12">
                         <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking">
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram" title="Link to Instsgram"><i
-                                data-feather="instagram"></i></i></a>
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter" title="Link to Twitter"><i
-                                data-feather="twitter"></i></i></a>
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook" title="Link to Facebook"><i
-                                data-feather="facebook"></i></a> 
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram"
+                            title="Link to Instsgram"><i data-feather="instagram"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter"
+                            title="Link to Twitter"><i data-feather="twitter"></i></i></a>
+                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook"
+                            title="Link to Facebook"><i data-feather="facebook"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-12">
                     <div class="row tyc">
                         <div class=" col-lg-4">
-                            <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y condiciones</a>
+                            <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y
+                                condiciones</a>
                         </div>
                         <div class=" col-lg-4">
-                            <a href="politica-privacidad.html" title="Link Política de privacidad">Política de privacidad</a>
+                            <a href="politica-privacidad.html" title="Link Política de privacidad">Política de
+                                privacidad</a>
                         </div>
                         <div class=" col-lg-4">
                             <a href="politica-cookies.html" title="Política de Cookies">Política de Cookies</a>
@@ -121,7 +126,7 @@
                             <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
                         </div>
                     </div>
-                </div>           
+                </div>
 
             </div>
         </div>
@@ -136,6 +141,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/script.js"></script>
- 
+
 
 </html>
