@@ -115,11 +115,11 @@ label, ::-webkit-input-placeholder {
 }
 
 /* PARA Q SE MUESTRE 100 DE ALTO EN PANTALLAS GRANDES Y NO SE DESACOMODE EN PANTALLAS PEQUEÑAS */
-/* .ph-100{
+.ph-100{
     height: 100%;
 }
 @media (min-height: 650px) {
   .ph-100 {
     height: 100vh;
   }
-} */
+}
