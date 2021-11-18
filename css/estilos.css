@@ -44,15 +44,7 @@ footer .container-fluid .row{
     text-align: center;
 }
 
-footer .container-fluid .row .col{
-    margin: 5px 0px;
-    padding: 5px;
-    /* border-right:#F1F1F2 1px solid ; */
-}
-footer .container-fluid .row.end{
-    margin-top: 30px;
-    
-}
+
 
 /* BODY DE PAG.REGISTRO */
 .bodyreg{
