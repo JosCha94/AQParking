@@ -125,5 +125,6 @@ label, ::-webkit-input-placeholder {
 } */
 
 /* FUENTE GRANDE */
-.fs-x{font-size:calc(2rem + 1.5vw)!important;}
-.borde{-webkit-text-stroke: 2px black;}
+.fs-x{font-size:calc(2rem + 1.5vw)!important;
+color: #5ca1e2b9;}
+.borde{-webkit-text-stroke: 2px white;}
