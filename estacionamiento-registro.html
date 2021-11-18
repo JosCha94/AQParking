@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <!-- flatpickr time picker JS-->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
-
-
+  
     <title>AQParking - Nuevo Registro de usuario u estacionamiento</title>
 </head>
 
@@ -133,8 +131,24 @@
                         </div>
                         <div class="mb-3">
                             <label for="fotoEstacionamiento" class="form-label">Mapa del lugar</label><br>
-                            <button type="button" class="mapa btn btn-secondary btn-sm"><a
-                                    href="https://goo.gl/maps/hCEoTeUvduzVQcV27"></a>Seleccionar en el mapa</button>
+                            <button type="button" class="mapa btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Seleccionar en el mapa</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d116862.54554679655!2d90.40409584970706!3d23.749000170125925!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1550040341458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
                         <div class="mb-3">
                             <label for="precioEstacionamiento" class="form-label">Precio</label>
@@ -169,30 +183,31 @@
                 <div class="col-lg-3 col-md-12">
                     <div class="col col-lg-12">
                         <img src="img/logo.png" title="logo AQPparking" alt="logo AQPparking">
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono instagram"
-                            title="Link to Instsgram"><i data-feather="instagram"></i></i></a>
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono twitter"
-                            title="Link to Twitter"><i data-feather="twitter"></i></i></a>
-                        <a class="text-light display-6 px-4 text-dark" href="#" target="_blank" alt="icono facebook"
+                        <a class="text-light display-6 px-4 " href="#" target="_blank" alt="icono instagram"
+                            title="Link to Instsgram"><i data-feather="instagram"></i></a>
+                        <a class="text-light display-6 px-4" href="#" target="_blank" alt="icono twitter"
+                            title="Link to Twitter"><i data-feather="twitter"></i></a>
+                        <a class="text-light display-6 px-4" href="#" target="_blank" alt="icono facebook"
                             title="Link to Facebook"><i data-feather="facebook"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-12">
                     <div class="row tyc">
-                        <div class=" col-lg-4 ">
+                        <div class=" col-lg-4">
                             <a href="terminos-condiciones.html" title="Link Terminos y condiciones">Terminos y
                                 condiciones</a>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 c2">
                             <a href="politica-privacidad.html" title="Link Política de privacidad">Política de
                                 privacidad</a>
                         </div>
                         <div class=" col-lg-4">
                             <a href="politica-cookies.html" title="Política de Cookies">Política de Cookies</a>
                         </div>
-                    </div>
-                    <div class="row end">
-                        <p class="text-center">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
+                        <div class="row end">
+                            <p class="text-center mt-4">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
+                            
+                        </div>
                     </div>
                 </div>
 
