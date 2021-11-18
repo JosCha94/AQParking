@@ -123,3 +123,7 @@ label, ::-webkit-input-placeholder {
     height: 100vh;
   }
 } */
+
+/* FUENTE GRANDE */
+.fs-x{font-size:calc(2rem + 1.5vw)!important;}
+.borde{-webkit-text-stroke: 2px black;}
