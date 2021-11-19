@@ -61,9 +61,10 @@
             </div>
         </div>
     </nav>
-    <!-- BODY -->    
-    <h2 class="text-center my-5">NOMBRE DE ESTACIONAMIENTO</h2>
-    <div class="container py-5 my-5">        
+    <!-- BODY -->
+    
+    <div class="container py-5 my-5">
+        <h2 class="text-center my-5">NOMBRE DE ESTACIONAMIENTO</h2>
         <div class="row">
             <div class="col-sm-4">
                 <img class="img-fluid" src="img/estacionamiento1.jpg" alt="estacionamiento" width="400" height="600">
@@ -98,20 +99,20 @@
                             Precio</button>
                     </div>
                 </div>
-                <div class="row mb-3"></div>
-                <div class="col-sm-6">
-                    <form role="form" class="mb-2">
-                        <div class="form-group">
-                            <label for="sitiospark" class="fw-bolder fs-6 mb-2">Espacios Disponibles: </label>
-                            <div class="input-group">
-                                <span class="input-group-text">Disponibles</span>
-                                <input type="number" class="form-control" min="0" max="100" name="sitiospark"
-                                    id="sitiospark">
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <p class="fw-bolder fs-6">Espacios Disponibles:</p>
+                        <h2 class="mx-5">n</h2>
+                        <hr class="d-sm-none ">
+                        <form role="form" class="mb-2">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary my-2" id="btn-sitioplus"
+                                    name="btn-sitioplus"><i data-feather="plus"></i></button>
+                                <button type="submit" class="btn btn-danger my-2" id="btn-sitiominus"
+                                    name="btn-sitiominus"><i data-feather="minus"></i></button>
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary my-2" id="sitioupdate"
-                            name="sitioupdate">Actualizar Espacios</button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,14 +229,14 @@
                         </div>
                         <div class="row end">
                             <p class="text-center mt-4">© <span id="anio"></span> AQParking.com by Nosotros SAC</p>
-                            
+
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </footer>r>
+    </footer>
 </body>
 <script src="feather-icons/dist/feather.min.js"></script>
 <script>
