@@ -14,6 +14,23 @@
     height: 100%; 
 } */
 /*FOOTER*/
+
+/*INICIO INDEX*/
+.benef p{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.bene-ico{  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;  
+    width: 25%;
+    justify-content: center;
+}
+
 footer {
     margin-top: auto;
     color: white;
@@ -71,7 +88,7 @@ footer .container-fluid .row{
 }
 
 label, ::-webkit-input-placeholder {
-    font-size: med;
+    font-size: medium;
 }
 .imgRegistro{
     margin-top: 180px;
