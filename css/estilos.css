@@ -13,7 +13,6 @@
     flex-direction:column;
     height: 100%; 
 } */
-/*FOOTER*/
 
 /*INICIO INDEX*/
 .benef p{
@@ -31,6 +30,7 @@
     justify-content: center;
 }
 
+/*FOOTER*/
 footer {
     margin-top: auto;
     color: white;
