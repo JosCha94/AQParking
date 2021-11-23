@@ -55,12 +55,12 @@ footer img{
     margin-right: auto;
 }
 footer .container-fluid .row {
-    background-color: rgb(156, 153, 153);    
+    background-color: #5CA2E2;    
     align-items: center;
     text-align: center;
 }
 footer .container-fluid .end {
-    background-color: rgb(63, 61, 61);
+    background-color: #5CA2E2;
 }
 
 
