@@ -174,7 +174,42 @@
                 <span><a href="recuperacion.html">Recuperar Contraseña</a></span>
             </div>
         </div>
+        
+        <!-- MODAL PARA TYC -->
+
+        <div class="modal fade" id="myModal"data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Condiciones del registro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                      <p>
+                        Al aceptar los terminos de registro de cochera,  usted también acepta el uso de determinados servicios vinculados a  AQPARKING y el funcionamiento de la plataforma,
+                        los que se gestionan a través de la aplicación y que podrán regirse por condiciones de uso y políticas de privacidad propias.
+                      </p>
+                      <p>
+                        También, acepta el uso de la información registrada, exclusivamente para su verificación de veracidad y legalidad, <b><strong> verificacion que se llevara a cabo en no más de 
+                        72 horas a partir de su registro </strong></b>. 
+                      </p>
+                      <p>
+                        Hasta que se confirme la información registrada por su persona, no podrá hacer uso de nuestra web como usuario propietario de una playa de
+                        estacionamiento
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="redirect">Cancelar</button>
+                        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN MODAL TYC -->
     </div>
+
 
     <!--FOOTER-->
     <footer class="footer">
@@ -246,6 +281,25 @@
         dateFormat: "H:i",
     }
     flatpickr("#timepkr", config);
+
 </script>
+
+<!-- FIN DEL TIME PICKER -->
+
+
+<!-- COMIENZA MODAL TYC -->
+<script>
+
+let myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+myModal.toggle()
+
+// CANCELAR MODAL
+
+document.getElementById("redirect").onclick = function(){
+    window.location.replace('registro.html')
+}
+
+</script>
+<!-- FIN MODAL TYC -->
 
 </html>
