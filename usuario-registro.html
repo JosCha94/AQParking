@@ -10,7 +10,8 @@
     <meta name="description"
         content="Encuentra tu estacionamiento en la ciudad de Arequipa y reserva tu sitio facilmente">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.esm.min.js">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>AQParking - Nuevo Registro de usuario u estacionamiento</title>
 </head>
@@ -72,15 +73,19 @@
                     <div class="mb-4">
                         <label for="mailRegistro" class="form-label">Correo Electronico</label>
                         <input type="email" class="form-control" id="mailRegistro" name="mailRegistro"
-                            placeholder="name@example.com" required>
+                            placeholder="name@example.com" oninvalid="alert('Ingrese un correo electrónico válido');" required 
+                            pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
                     </div>
                     <div class="mb-4">
                         <label for="registroPass" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="registroPass" name="registroPass" placeholder="Contraseña" >
+                        <input type="password" class="form-control" id="registroPass" name="registroPass" placeholder="Almenos una mayúscula, una minúscula y un número"
+                        oninvalid="alert('Ingrese una contraseña válida');"
+                        required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
                     </div>
                     <div class="mb-4">
                         <label for="registroPass2" class="form-label">Confirmar contraseña</label>
-                        <input type="password" class="form-control" id="registroPass2" name="registroPass2" placeholder="Vuelva a escribir la contraseña">
+                        <input type="password" class="form-control" id="registroPass2" name="registroPass2" placeholder="Vuelva a escribir la contraseña"
+                        required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" oninvalid="alert('Ingrese una contraseña válida');" >
                     </div>
                     <div class="mb-4">
                         <label for="tipoDocumento" class="form-label">Tipo de documento</label>
@@ -92,12 +97,12 @@
                     <div class="mb-4">
                         <label for="nroDocumento" class="form-label">N° de documento</label>
                         <input type="text" class="form-control" id="nroDocumento" name="nroDocumento" placeholder=""
-                            required pattern="[0-9]{8}">
+                            required pattern="[0-9]{8}" oninvalid="alert('Ingrese un N° de documento válido');">
                     </div>
                     <div class="mb-4">
                         <label for="nroCelular" class="form-label">N° de celular</label>
                         <input type="text" class="form-control" id="nroCelular" name="nroCelular" placeholder=""
-                            required pattern="[0-9]{9}">
+                            required pattern="[0-9]{9}" oninvalid="alert('Ingrese un número de celular válido');">
                     </div>
 
                     <div class="d-grid ">
