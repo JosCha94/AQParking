@@ -80,12 +80,13 @@
                         <div class="mb-3">
                             <label for="mailEstacionamiento" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" id="mailEstacionamiento" name="mailEstacionamiento"
-                                placeholder="alguien@ejemplo.com" required>
+                                placeholder="alguien@ejemplo.com" oninvalid="alert('Ingrese un correo electrónico válido');" required 
+                                pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
                         </div>
                         <div class="mb-3">
                             <label for="telEstacionamiento" class="form-label">Telefono</label>
                             <input type="tel" class="form-control" id="telEstacionamiento" name="telEstacionamiento"
-                                placeholder="Ingrese un numero de celular" required>
+                                placeholder="Ingrese un numero de celular" required pattern="[0-9]{9}" oninvalid="alert('Ingrese un número de celular válido');">
                         </div>
                         <div class="mb-3">
                             <label for="fotoEstacionamiento" class="form-label">Foto</label>
@@ -113,7 +114,7 @@
                         <div class="mb-3">
                             <label for="rucEstacionamiento" class="form-label">RUC</label>
                             <input type="text" class="form-control" id="rucEstacionamiento" name="rucEstacionamiento"
-                                placeholder="Ingrese el RUC de su empresa" required min="11" max="11">
+                                placeholder="Ingrese el RUC de su empresa" pattern="[0-9]{11}">
                         </div>
                         <div class="mb-3">
                             <label for="refEstacionamiento" class="form-label">Referencia</label>
@@ -123,7 +124,14 @@
                         <div class="mb-3">
                             <label for="passEstacionamiento" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="passEstacionamiento"
-                                name="passEstacionamiento" placeholder="***************" required>
+                                name="passEstacionamiento" placeholder="Almenos una mayúscula, una minúscula y un número" oninvalid="alert('Ingrese una contraseña válida');"
+                                required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passEstacionamiento" class="form-label">Confirmación de contraseña</label>
+                            <input type="password2" class="form-control" id="passEstacionamiento2"
+                                name="passEstacionamiento2" placeholder="Vuelva a escribir su contraseña" oninvalid="alert('Ingrese una contraseña válida');"
+                                required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$">
                         </div>
                         <div class="mb-3">
                             <label for="fotoEstacionamiento" class="form-label">Mapa del lugar</label><br>
